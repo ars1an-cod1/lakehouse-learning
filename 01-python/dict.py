@@ -2,9 +2,7 @@
 grades={
     "math":80, "physics": 57 , "Computer Science": 89 , 
 }
-total=sum(grades.values())
-count=len(grades)
-avarage=total/count
+
 grades["chemistry"]=100
 grades["physics"]=70
 grades.get("biology")
