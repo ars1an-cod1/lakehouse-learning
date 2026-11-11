@@ -29,7 +29,7 @@ graph TD
 | Table format  | Apache Iceberg   | Turns files into tables    |
 | Compute       | Apache Spark     | Processes big data         |
 | Orchestration | Kubernetes       | Runs Spark and services    |
-| Backend       | Kotlin + Quarkus | APIs that control it all   |
+| Backend       | Rust (+ web framework, e.g. Axum) | APIs that control it all |
 | Metadata DB   | Postgres         | Job list and their status  |
 
 ## What I will do
