@@ -35,10 +35,15 @@ class Car:
             self.price =self.price-amount               # old price - discount
             print(f"{self.brand} new price: {self.price}") 
 
+              
+
                 
 
-
+audi = Car("Audi", 30000, 25000)
+toyota = Car("Toyota", 60000, 15000)
 bmw = Car("BMW", 45000, 20000)
+
+audi.sell()
 bmw.status() ## before selling --> available for sale
 bmw.sell()
 bmw.sell()  
@@ -46,6 +51,11 @@ bmw.status() ## after selling--> sold
 bmw.drive(200)
 bmw.drive(50)      
 bmw.discount(10) # BMW is already sold no discount
+
+cars=[bmw,audi,toyota]
+
+for car in cars:
+    car.status() 
 
 
 
