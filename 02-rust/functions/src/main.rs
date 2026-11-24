@@ -17,6 +17,20 @@ fn discount(price:f64, percent:f64)->f64{
     return price- price*percent/100.0;
 }
 
+fn is_adult(age: i32 ) -> bool{ // return type is gonna be boolean 
+
+    return age>=18; // here is true or false
+}
+
+fn avarage(a:f64,b:f64,c:f64)->f64{
+
+    return (a+b+c)/3.0;
+
+
+}
+
+
+
 fn main(){
     let new_km=add_km(45200,200);
     println!("{}", new_km);
@@ -31,4 +45,11 @@ fn main(){
 
     let discount_price=discount(1400.0,15.0);
     println!("{}{}", "New price with discount :",discount_price);
+
+    let new_is_adult = is_adult(21);
+    println!("{}", new_is_adult);
+
+    let new_avarage=avarage(23.0,56.0,100.0);
+    println!("{}", new_avarage);
+    
 }
